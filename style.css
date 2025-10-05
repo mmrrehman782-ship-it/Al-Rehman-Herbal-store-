@@ -1,46 +1,42 @@
 /* Al Rehman Herbals Website Style */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
-  background-color: #f9f9f4;
-  color: #2e2e2e;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117;
+  color: #e6e6e6;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
-/* Header */
 header {
-  background: #e8f5e9;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-header h1 {
-  font-size: 2rem;
-  color: #1e4620;
-}
-header p {
-  color: #4f774f;
-  font-weight: 500;
+  padding: 2rem 1rem;
+  background: linear-gradient(90deg, #0d1117, #16213e);
+  border-bottom: 1px solid #1f2937;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Hero Section */
+header h1 {
+  color: #8ef48e;
+  font-size: 2rem;
+}
+
+header p {
+  color: #aaa;
+}
+
 .hero {
   padding: 2rem 1rem;
 }
+
 .hero h2 {
   font-size: 1.8rem;
-  color: #2e7d32;
-}
-.hero p {
-  margin-top: .5rem;
-  color: #5a7c5a;
+  color: #f4f4f4;
 }
 
-/* Products */
+.hero p {
+  color: #c1c1c1;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -49,50 +45,56 @@ header p {
 }
 
 .product {
-  background: var(--pouch);
+  background-color: #161b22;
   border-radius: 20px;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 15px rgba(0, 255, 100, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  color: #8ef48e;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  color: #b5b5b5;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #8ef48e;
+  border: none;
+  color: #0d1117;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
-.product:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-}
-.product img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-.product h3 {
-  color: #1b5e20;
-  margin-bottom: .5rem;
-}
-.product p {
-  color: #3e3e3e;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
-button {
-  background: #1b5e20;
-  color: white;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+
 button:hover {
-  background: #388e3c;
+  background-color: #69d569;
+  box-shadow: 0 0 10px #8ef48e;
 }
 
-/* Footer */
 footer {
-  background: #e8f5e9;
-  padding: 1rem;
-  margin-top: 2rem;
-  color: #2e462e;
+  padding: 1.5rem;
+  border-top: 1px solid #1f2937;
+  color: #aaa;
   font-size: 0.9rem;
+  background-color: #0d1117;
 }
-
