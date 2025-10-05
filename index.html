@@ -5,211 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Al Rehman Herbals</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body{background-color:#f5fff6;color:#333;line-height:1.6;}
-    header{background-color:#1f4d2e;color:white;text-align:center;padding:20px 10px;}
-    header h1{font-size:1.8rem;margin-bottom:5px;}
-    header p{font-size:1rem;color:#cde6d2;}
-    .products{padding:40px 20px;text-align:center;}
-    .products h2{color:#1f4d2e;font-size:2em;margin-bottom:10px;}
-    .products p{color:#4b6043;margin-bottom:40px;}
-    .product-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;justify-items:center;}
-    .product-card{border-radius:20px;box-shadow:0 4px 10px rgba(0,0,0,0.1);padding:20px;max-width:300px;transition:.3s;overflow:hidden;}
-    .product-card:hover{transform:translateY(-5px);box-shadow:0 6px 14px rgba(0,0,0,0.15);}
-    .product-card img{width:100%;border-radius:12px;margin-bottom:10px;}
-    .product-card h3{color:#1f4d2e;margin-bottom:5px;}
-    .price{color:#2e6b43;font-weight:600;margin-bottom:10px;}
-    ul.features{list-style-type:disc;text-align:left;margin:0 0 10px 20px;color:#444;}
-    .btn-detail{background:#1f4d2e;color:white;border:none;padding:8px 16px;border-radius:25px;cursor:pointer;}
-    .btn-detail:hover{background:#2e6b43;}
-    .detail-content{max-height:0;overflow:hidden;transition:max-height .4s ease;text-align:left;margin-top:10px;}
-    .detail-content.open{max-height:500px;}
-    .detail-content h4{color:#1f4d2e;margin-top:10px;}
-    .card-amla{background:#e8f5e9;}
-    .card-multani{background:#fffde7;}
-    .card-pumpkin{background:#fff3e0;}
-    .card-sunflower{background:#fff8e1;}
-    .card-sesame{background:#f9fbe7;}
-    .card-flax{background:#e3f2fd;}
-    .card-chia{background:#f3e5f5;}
-    footer{background:#1f4d2e;color:white;text-align:center;padding:15px;margin-top:50px;}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>🌿 Al Rehman Herbals</h1>
-  <p>Pure. Natural. Trusted Since 1990.</p>
-</header>
+  <!-- Header -->
+  <header>
+    <h1>🌿 Al Rehman Herbals</h1>
+    <p>Pure. Natural. Trusted Since 1990.</p>
+  </header>
 
-<section class="products">
-  <h2>Our Premium Herbal Products</h2>
-  <p>Discover nature’s goodness — 100% organic & chemical-free.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Discover Nature’s Goodness</h2>
+    <p>100% Organic • Chemical Free • Premium Quality</p>
+  </section>
 
-  <div class="product-container">
-
-    <!-- Amla -->
-    <div class="product-card card-amla">
-      <img src="https://via.placeholder.com/200?text=Amla" alt="Amla">
+  <!-- Products -->
+  <section class="products">
+    <div class="product" style="--pouch:#c3e6c0;">
+      <img src="amla.png" alt="Amla Fruit Powder">
       <h3>Amla Fruit Powder</h3>
-      <p class="price">Rs. 999</p>
-      <ul class="features">
-        <li>Rich in Vitamin C</li>
-        <li>Boosts Hair Growth</li>
-        <li>Improves Immunity</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Amla Fruit Powder supports strong hair roots, brighter skin, and overall immunity. 100% pure & natural.</p>
-        <h4>Ingredients</h4>
-        <p>Pure Amla fruit powder (Emblica officinalis).</p>
-        <h4>How to Use</h4>
-        <p>Mix 1 tsp in water or mask 2–3 times a week.</p>
-      </div>
+      <p>Rich in Vitamin C • Boosts Hair Growth • Improves Immunity</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Multani -->
-    <div class="product-card card-multani">
-      <img src="https://via.placeholder.com/200?text=Multani" alt="Multani Mitti">
+    <div class="product" style="--pouch:#f4e3b2;">
+      <img src="multani.png" alt="Multani Mitti">
       <h3>Multani Mitti</h3>
-      <p class="price">Rs. 550</p>
-      <ul class="features">
-        <li>Deep Cleansing</li>
-        <li>Oil Absorbing</li>
-        <li>Skin Cooling</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Natural clay for glowing skin. Removes excess oil and dirt for a pure complexion.</p>
-        <h4>Ingredients</h4>
-        <p>Pure Fuller’s Earth (Multani Mitti).</p>
-        <h4>How to Use</h4>
-        <p>Mix with rose water, apply, and rinse after 15 mins.</p>
-      </div>
+      <p>Deep Cleansing • Oil Control • Refreshes Skin</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Pumpkin -->
-    <div class="product-card card-pumpkin">
-      <img src="https://via.placeholder.com/200?text=Pumpkin" alt="Pumpkin Seed">
+    <div class="product" style="--pouch:#f1c5a5;">
+      <img src="pumpkin.png" alt="Pumpkin Seeds">
       <h3>Pumpkin Seeds</h3>
-      <p class="price">Rs. 950</p>
-      <ul class="features">
-        <li>Rich in Zinc</li>
-        <li>Boosts Energy</li>
-        <li>Supports Heart</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Pumpkin seeds are full of nutrients that help improve heart health, immunity, and stamina.</p>
-        <h4>Ingredients</h4>
-        <p>100% Organic Pumpkin Seeds.</p>
-        <h4>How to Use</h4>
-        <p>Eat raw, roasted, or sprinkle over salad.</p>
-      </div>
+      <p>Rich in Protein • Good for Heart • Supports Immunity</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Sunflower -->
-    <div class="product-card card-sunflower">
-      <img src="https://via.placeholder.com/200?text=Sunflower" alt="Sunflower Seed">
+    <div class="product" style="--pouch:#f6e9a9;">
+      <img src="sunflower.png" alt="Sunflower Seeds">
       <h3>Sunflower Seeds</h3>
-      <p class="price">Rs. 850</p>
-      <ul class="features">
-        <li>Vitamin E Rich</li>
-        <li>Boosts Glow</li>
-        <li>Improves Metabolism</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Sunflower seeds support glowing skin and better immunity. High in vitamin E and antioxidants.</p>
-        <h4>Ingredients</h4>
-        <p>Pure roasted sunflower seeds.</p>
-        <h4>How to Use</h4>
-        <p>Use as snack or sprinkle over dishes.</p>
-      </div>
+      <p>Improves Skin Health • High in Antioxidants • Boosts Energy</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Sesame -->
-    <div class="product-card card-sesame">
-      <img src="https://via.placeholder.com/200?text=Sesame" alt="Sesame Seed">
+    <div class="product" style="--pouch:#f5e5d0;">
+      <img src="sesame.png" alt="Sesame Seeds">
       <h3>Sesame Seeds</h3>
-      <p class="price">Rs. 700</p>
-      <ul class="features">
-        <li>Rich in Calcium</li>
-        <li>Supports Digestion</li>
-        <li>Boosts Energy</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Sesame seeds strengthen bones, aid digestion, and provide natural antioxidants.</p>
-        <h4>Ingredients</h4>
-        <p>Pure roasted sesame seeds.</p>
-        <h4>How to Use</h4>
-        <p>Add to food, salads, or grind into paste.</p>
-      </div>
+      <p>Strengthens Bones • Rich in Calcium • Enhances Digestion</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Flax -->
-    <div class="product-card card-flax">
-      <img src="https://via.placeholder.com/200?text=Flax" alt="Flax Seed">
+    <div class="product" style="--pouch:#e4d8c9;">
+      <img src="flax.png" alt="Flax Seeds">
       <h3>Flax Seeds</h3>
-      <p class="price">Rs. 600</p>
-      <ul class="features">
-        <li>Omega-3 Rich</li>
-        <li>Improves Digestion</li>
-        <li>Heart Health</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Flax seeds are a powerhouse of Omega-3s and fiber that support heart and digestive health.</p>
-        <h4>Ingredients</h4>
-        <p>Organic flax seeds (whole & ground).</p>
-        <h4>How to Use</h4>
-        <p>Mix in smoothies, cereals, or salads.</p>
-      </div>
+      <p>High in Omega-3 • Improves Digestion • Heart Friendly</p>
+      <button>View Details</button>
     </div>
 
-    <!-- Chia -->
-    <div class="product-card card-chia">
-      <img src="https://via.placeholder.com/200?text=Chia" alt="Chia Seed">
+    <div class="product" style="--pouch:#e6f0e8;">
+      <img src="chia.png" alt="Chia Seeds">
       <h3>Chia Seeds</h3>
-      <p class="price">Rs. 1200</p>
-      <ul class="features">
-        <li>High in Fiber</li>
-        <li>Boosts Energy</li>
-        <li>Protein Rich</li>
-      </ul>
-      <button class="btn-detail">View Details</button>
-      <div class="detail-content">
-        <h4>Description</h4>
-        <p>Chia seeds are rich in fiber, protein, and antioxidants that keep you active & hydrated.</p>
-        <h4>Ingredients</h4>
-        <p>100% Organic Chia Seeds.</p>
-        <h4>How to Use</h4>
-        <p>Soak in milk or water for 10 mins before eating.</p>
-      </div>
+      <p>Rich in Fiber • Boosts Energy • Great for Weight Loss</p>
+      <button>View Details</button>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Al Rehman Herbals | All Rights Reserved</p>
-</footer>
-
-<script>
-  const btns = document.querySelectorAll('.btn-detail');
-  btns.forEach(b => b.addEventListener('click', () => {
-    const c = b.nextElementSibling;
-    c.classList.toggle('open');
-  }));
-</script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Al Rehman Herbals — All Rights Reserved.</p>
+  </footer>
 
 </body>
-</html>
+</html>      
